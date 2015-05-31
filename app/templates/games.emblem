@@ -1,1 +1,8 @@
-= outlet
+div style="margine-top: 60"
+  li style="padding-top: 60"
+    each model as |game|
+      ul
+        img src=game.box_small
+        p = game.name
+
+== outlet
