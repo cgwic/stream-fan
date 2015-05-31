@@ -1,6 +1,8 @@
 strings =
-  home:
-    welcome: 'Welcome 2 Ember.js'
-
+  title: 'stream-fan'
+  games:
+    title: 'Games'
+  streams:
+    title: 'Streams'
 
 `export default strings`

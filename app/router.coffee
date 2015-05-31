@@ -5,5 +5,7 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
+  @resource 'games'
+  @resource 'streams'
 
 `export default Router;`
