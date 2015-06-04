@@ -1,0 +1,9 @@
+.game-link {
+  text-align: center;
+  border-radius: 3%;
+  background-color: #DEE3E3;
+}
+
+body {
+  padding-top: 70px;
+}

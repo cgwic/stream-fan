@@ -1,8 +1,8 @@
-div style="margine-top: 60"
-  li style="padding-top: 60"
-    each model as |game|
-      ul
-        img src=game.box_small
-        p = game.name
+.row
+  each model as |game|
+    .col-xs-6.col-md-3
+      a.thumbnail.game-link href="#"
+        img src=game.box_medium
+        h5.game-title = game.name
 
 == outlet
