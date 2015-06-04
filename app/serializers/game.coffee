@@ -19,7 +19,6 @@ serializer = DS.RESTSerializer.extend
   extractArray: (store, type, payload) ->
     gamesArray = []
     gamesArray.push(extractGame gameDescr) for gameDescr in payload.top
-    console.log 'Got ' + gamesArray.length + ' games'
     @_super store, type, games: gamesArray
 
 `export default serializer`
