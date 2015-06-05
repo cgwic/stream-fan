@@ -6,7 +6,8 @@
         img src=stream.preview_medium
         h5.game-title = stream.status
         .row
-          .col-md-4.thumbnail-streamer-name = stream.display_name
-          .col-md-4.col-md-offset-4
+          .col-xs-8 style="text-align: left"
+            span.thumbnail-streamer-name = stream.display_name
+          .col-xs-4 style="text-align: right"
             span.stream-viewers-count.badge.pull-right = stream.viewersCount
 ==outlet
