@@ -12,6 +12,6 @@ header
                 ul.nav.navbar-nav.navbar-left
                     li = link-to 'games'
                       = t 'games.title'
-                    li = link-to 'streams'
+                    li = link-to 'streams.all-games'
                       = t 'streams.title'
 ==outlet

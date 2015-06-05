@@ -4,6 +4,22 @@
   background-color: #DEE3E3;
 }
 
+.stream-viewers-count, .game-viewers-count {
+  text-align: right;
+  background-color: #1FC276;
+}
+
+.thumbnail-streamer-name {
+  font-weight: bold;
+  text-align: left;
+  color: blue;
+}
+
+.game-streams-count {
+  text-align: left;
+  background-color: #49C1E3;
+}
+
 body {
   padding-top: 70px;
 }
