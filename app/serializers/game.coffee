@@ -1,8 +1,8 @@
 `import DS from 'ember-data'`
 
 extractGame = (gameDescr) ->
-  viewers: gameDescr.viewers
-  channels: gameDescr.channels
+  viewersCount: gameDescr.viewers
+  streamsCount: gameDescr.channels
   _id: gameDescr.game._id
   id: gameDescr.game.name
   name: gameDescr.game.name
