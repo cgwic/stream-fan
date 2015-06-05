@@ -1,8 +1,11 @@
 `import DS from 'ember-data'`
 
 applicationAdapter = DS.RESTAdapter.extend
-  host: 'https://api.twitch.tv',
+  host: 'https://api.twitch.tv'
   namespace: 'kraken'
+  headers:
+    "client_id" : "gpojswtg0itthwvo2q77x0j5bn1mrgb"
+
 
   ajaxOptions: (url, type, options) ->
     hash = @_super(url, type, options)
@@ -10,7 +13,7 @@ applicationAdapter = DS.RESTAdapter.extend
     hash
 
   buildURL: (type, id) ->
-    @_super(type, id) if type != 'game'
-    @_super(type, id) + '/top'
+    return @_super(type, id) + '?limit=20' if type != 'game'
+    @_super(type, id) + '/top?limit=20'
 
 `export default applicationAdapter`
