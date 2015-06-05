@@ -2,6 +2,6 @@
 
 route = Ember.Route.extend
   model: ->
-    @store.find('game');
+    @store.find('game')
 
 `export default route`
