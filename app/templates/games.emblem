@@ -5,8 +5,8 @@
         img src=game.box_medium
         h5.game-title = game.name
         .row
-          .col-md-4 style="text-align: left"
+          .col-xs-6 style="text-align: left"
             span.game-streams-count.badge = game.streamsCount
-          .col-md-4.col-md-offset-4 style="text-align: right"
+          .col-xs-6 style="text-align: right"
             span.game-viewers-count.badge = game.viewersCount
 ==outlet

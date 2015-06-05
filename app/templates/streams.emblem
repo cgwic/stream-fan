@@ -1,6 +1,6 @@
 .row
   each model as |stream|
-    .col-xs-6.col-sm-4.col-md-3
+    .col-xs-6.col-sm-4.col-md-3 class=hideGameTitle:stream-tumbnail:stream-tumbnail-with-game-name
       link-to .thumbnail.game-link ''
         h4 hidden=hideGameTitle = stream.game
         img src=stream.preview_medium

@@ -23,3 +23,11 @@
 body {
   padding-top: 70px;
 }
+
+.stream-tumbnail-with-game-name {
+  min-height: 336px;
+}
+
+.stream-tumbnail {
+  min-height: 310px;
+}
