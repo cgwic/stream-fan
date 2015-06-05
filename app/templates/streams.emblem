@@ -1,0 +1,12 @@
+.row
+  each model as |stream|
+    .col-xs-6.col-sm-4.col-md-3
+      link-to .thumbnail.game-link ''
+        h4 hidden=hideGameTitle = stream.game
+        img src=stream.preview_medium
+        h5.game-title = stream.status
+        .row
+          .col-md-4.thumbnail-streamer-name = stream.display_name
+          .col-md-4.col-md-offset-4
+            span.stream-viewers-count.badge.pull-right = stream.viewersCount
+==outlet

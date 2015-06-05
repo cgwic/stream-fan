@@ -5,7 +5,10 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-  @resource 'games'
-  @resource 'streams'
+  @route 'games'
+  @route 'streams',
+    path: 'streams/:game',
+    ->
+  @route 'streams.all-games', path: 'streams/all-games'
 
-`export default Router;`
+`export default Router`
