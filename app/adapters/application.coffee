@@ -14,6 +14,6 @@ applicationAdapter = DS.RESTAdapter.extend
 
   buildURL: (type, id) ->
     return @_super(type, id) + '?limit=20' if type != 'game'
-    @_super(type, id) + '/top?limit=20'
+    @_super(type, id) + '/top'
 
 `export default applicationAdapter`

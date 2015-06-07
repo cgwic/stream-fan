@@ -9,4 +9,7 @@
             span.game-streams-count.badge = game.streamsCount
           .col-xs-6 style="text-align: right"
             span.game-viewers-count.badge = game.viewersCount
+
+infinity-loader infinityModel=model
+
 ==outlet
