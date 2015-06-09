@@ -13,7 +13,7 @@ route = Ember.Route.extend OffsetInfinityRoute,
 
   actions:
     willTransition: (transition) ->
-      # dirty hack, todo: will be removed
+      # dirty hack, todo: need to be removed
       @set '_currentOffset', 0
 
 `export default route`

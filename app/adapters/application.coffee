@@ -13,7 +13,7 @@ applicationAdapter = DS.RESTAdapter.extend
     hash
 
   buildURL: (type, id) ->
-    return @_super(type, id) + '?limit=20' if type != 'game'
+    return @_super(type, id) if type != 'game'
     @_super(type, id) + '/top'
 
 `export default applicationAdapter`
