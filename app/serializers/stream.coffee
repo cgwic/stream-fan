@@ -22,6 +22,9 @@ serializer = DS.RESTSerializer.extend
   extractArray: (store, type, payload) ->
     streamsArray = []
     streamsArray.push(extractStream streamDescr) for streamDescr in payload.streams
+    store.push 'numValue',
+      id: 'StreamsTotalCount'
+      value: payload._total
     @_super store, type, streams: streamsArray
 
 `export default serializer`

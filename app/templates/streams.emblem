@@ -10,4 +10,7 @@
             span.thumbnail-streamer-name = stream.display_name
           .col-xs-4 style="text-align: right"
             span.stream-viewers-count.badge.pull-right = stream.viewersCount
+
+infinity-loader infinityModel=model
+
 ==outlet
